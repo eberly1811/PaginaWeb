@@ -1,5 +1,8 @@
 /*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
+<<<<<<< HEAD
 @layer properties;
+=======
+>>>>>>> a164419bb9b92e99fc168a4b37b4eda22f75311c
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -8,6 +11,7 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+<<<<<<< HEAD
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-900: oklch(37.9% 0.146 265.522);
@@ -29,6 +33,11 @@
     --font-weight-bold: 700;
     --leading-relaxed: 1.625;
     --blur-3xl: 64px;
+=======
+    --color-blue-950: oklch(28.2% 0.091 267.935);
+    --color-white: #fff;
+    --spacing: 0.25rem;
+>>>>>>> a164419bb9b92e99fc168a4b37b4eda22f75311c
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -182,6 +191,7 @@
   }
 }
 @layer utilities {
+<<<<<<< HEAD
   .absolute {
     position: absolute;
   }
@@ -330,10 +340,18 @@
   }
   .text-red-500 {
     color: var(--color-red-500);
+=======
+  .bg-blue-950 {
+    background-color: var(--color-blue-950);
+  }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
+>>>>>>> a164419bb9b92e99fc168a4b37b4eda22f75311c
   }
   .text-white {
     color: var(--color-white);
   }
+<<<<<<< HEAD
   .blur-3xl {
     --tw-blur: blur(var(--blur-3xl));
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
@@ -493,4 +511,6 @@
       --tw-drop-shadow-size: initial;
     }
   }
+=======
+>>>>>>> a164419bb9b92e99fc168a4b37b4eda22f75311c
 }
