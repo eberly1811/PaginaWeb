@@ -1,29 +1,17 @@
-async function cargarComponente(id, archivo) {
-<<<<<<< HEAD
 
-    const respuesta = await fetch(archivo);
+async function cargarFooter() {
+    // 1. Buscamos la etiqueta <footer id="footer"> en el index.html (DOM)
+    const contenedorFooter=document.getElementById("footer")
+    // 2. Vamos a buscar el archivo footer.html a la carpeta components
+    const respuesta = await fetch("./components/footer.html");
 
-    const contenido = await respuesta.text();
+    // 3. Convertimos el archivo encontrado a texto HTML
+    const codigoHtml = await respuesta.text();
+    // 4. Insertamos el código HTML dentro de la etiqueta <footer>
+    contenedorFooter.innerHTML=codigoHtml;
 
-    document.getElementById(id).innerHTML =
-        contenido;
 
-    if (id === "footer") {
-        iniciarFooter();
-    }
 }
 
-
-cargarComponente(
-    "footer",
-    "./components/footer.html"
-);
-=======
-    const response = await fetch(archivo);
-    const html = await response.text();
-
-    document.getElementById(id).innerHTML = html;
-}
-
-cargarComponente("footer", "./components/footer.html");
->>>>>>> a164419bb9b92e99fc168a4b37b4eda22f75311c
+// 5. Ejecutamos la función para que se muestre en pantalla
+cargarFooter();
